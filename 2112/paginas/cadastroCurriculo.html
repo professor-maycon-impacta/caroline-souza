@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de curriculo</title>
+</head>
+
+<body>
+    <section>
+        <h1>Cadastro de Curriculum</h1>
+        <p>Curriculum incluido com sucesso</p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label>CPF:</label><br>
+                <input type="text" id="cpf">
+            </div><br>
+            <div>
+                <label>Nome:</label><br>
+                <input type="text" id="nome">
+            </div><br>
+            <div>
+                <label>Data Nascimento:</label>
+                <input type="date" id="data">
+            </div><br>
+            <div>
+
+                <table id="sexo">
+
+                    <tbody>
+                        <td>
+                            <label>Sexo:</label>
+                        </td>
+                        <td>
+                            <fieldset>
+                                <legend>Sexo:</legend>
+
+                                <input type="radio" id="masculino">
+                                <label>Masculino</label><br>
+                                <input type="radio" id="feminino">
+                                <label>Feminino</label><br>
+                            </fieldset>
+
+                        </td>
+                    </tbody>
+
+                </table>
+
+            </div><br>
+            <div>
+                <label>Telefone:</label>
+                <input type="text" id="telefone">
+            </div><br>
+            <div>
+                <label>Email:</label><br>
+                <input type="text" id="email">
+            </div><br>
+            <div>
+                <table id="foto">
+
+                    <tbody>
+                        <td>
+                            <label>Foto:</label>
+                        </td>
+                        <td>
+                            <input type="file" id="foto">
+                        </td>
+                    </tbody>
+
+                </table>
+
+            </div><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Endereço:</legend>
+            <div>
+                <label>Logradouro:</label><br>
+                <input type="text" id="logradouro">
+            </div><br>
+            <div>
+                <label>Número:</label>
+                <input type="text" id="numero" size="10">
+            </div><br>
+            <div>
+                <label>Bairro:</label><br>
+                <input type="text" id="bairro">
+            </div><br>
+            <div>
+                <label>Cidade:</label><br>
+                <input type="text" id="cidade">
+            </div><br>
+            <div>
+                <table id="estado">
+
+                    <tbody>
+                        <td>
+                            <label>Estado:</label>
+                        </td>
+                        <td>
+                            <select>
+                                <selected>
+                                    <option>São Paulo</option>
+                                    <option>Bahia</option>
+                                </selected>
+                            </select>
+                        </td>
+                    </tbody>
+
+                </table>
+            </div><br>
+            <div>
+                <label>Cep:</label><br>
+                <input type="text" id="cep">
+            </div><br>
+        </fieldset>
+        <fieldset>
+            <legend>Pretensões:</legend>
+            <table id="pretensoes">
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <label>Cargo 1:</label>
+                        </td>
+
+                        <td>
+                            <select>
+                                <selected>
+                                    <option>Administrador Banco de Dados</option>
+                                    <option>TI</option>
+                                </selected>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Cargo 2:</label>
+                        </td>
+
+                        <td>
+                            <select>
+                                <selected>
+                                    <option>Administrador Banco de Dados</option>
+                                    <option>TI</option>
+                                </selected>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Cargo 3:</label>
+                        </td>
+
+                        <td>
+                            <select>
+                                <selected>
+                                    <option>Administrador Banco de Dados</option>
+                                    <option>TI</option>
+                                </selected>
+                            </select>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table><br>
+            <div>
+                <label>Salário</label><br>
+                <label>Pretendido:</label><br>
+                <input type="text" id="pretendido">
+            </div><br>
+        </fieldset>
+        <fieldset>
+            <legend>Experiência Profissional</legend>
+            <div>
+                <label>Descrição:</label><br>
+                <textarea id="descricao" aria-setsize="200"></textarea>
+
+
+            </div><br>
+        </fieldset>
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="reset" id="limpar">Limpar</button>
+    </section>
+</body>
+
+</html>

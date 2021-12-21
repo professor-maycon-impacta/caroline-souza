@@ -1,0 +1,12 @@
+#titulo{
+    font-family: Times, "Times New Roman", Georgia, serif;
+    font-size: 40px;
+}
+#nome{
+    font-style: italic ;
+}
+#fieldset{
+    
+    padding-top: 30px;
+    padding-left: 100px
+}

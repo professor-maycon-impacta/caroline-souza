@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Institucional - ABC Tecnologia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/destaque.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu" id="menuTopo">
+                <li><a href="#">A Empresa</a></li>
+                <li><a href="paginas/produtos.html">Produtos</a></li>
+                <li><a href="paginas/localizacao.html">Localização</a></li>
+                <li><a href="paginas/registro.html">Trabalhe Conosco</a></li>
+                <li><a href="paginas/listaCandidatos.html">Listar Candidatos</a></li>
+                <li><a href="paginas/verRegistros.html">Ver Candidatos</a></li>
+
+                <li>
+                    <a href="javascript:void(0);" onclick="mostrarmenu()">&#9776;</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro"></section>
+
+    <div class="container">
+        <section>
+            <article>
+                <header>
+                    <div>
+                        <a class="registro" href="paginas/registro.html">
+                             Canditar-se <br>
+                            <span class="free">&#183;Hoje&#183;</span>
+                        </a>
+                    </div>
+                    <h2>Conheça-nos um pouco</h2>
+                    <p>Desde dua fundação a ABC Tecnologia é uma empresa com foco na elaboração de' soluções visando agilizar os processos relativos às tarefas de seus clientes. <br> A agilidade, redução de custos e satisfação dos nossos clientes é nossa
+                        maior meta.</p>
+                </header>
+                <p>Conheça nossos <a href="#">produtos e serviços</a> e descubra o que podemos fazer por você</p>
+
+                <h2 id="tituloVideo">Assista ao nosso vídeo, e conheça melhor a empresa</h2>
+                <div id="video" style="text-align: center;">
+                    <video controls="controls" width="400" height="300">
+                        <source src="videos/video.mp4" type="video/mp4">
+                        <!-- <p>Seu navagador não tem suporte ao elemento video</p> -->
+                    </video>
+                </div>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Depoimentos dos nossos clientes</h2>
+            <p>Excelente qualidade, ótimos profissionais</p>
+            <p>
+                Estava buscando uma solução para minha clínica e a ABC nos desenvolveu um sistema sob medida, cujos resultados superaram nossas expectativas.
+            </p>
+        </aside>
+    </div>
+    <footer class="footer">
+        <p>Avenida Paulista, 1009 - Bela Vista <br> São Paulo - CEP 01311-100</p>
+        <p>Copyright 2020 - Todos os direitos reservados</p>
+    </footer>
+    <script type="text/javascript">
+        function mostrarMenu() {
+            let elemento = document.getElementById("menuTopo");
+            if (elemento.className === "menu") {
+                elemento.className += "responsive";
+            } else {
+                elemento.className = "menu";
+            }
+        }
+    </script>
+</body>
+
+</html>

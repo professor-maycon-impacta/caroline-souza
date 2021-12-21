@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Curriculum</title>
+</head>
+
+<body>
+    <div>
+        <h1><b>Cadastro de Curriculum</b></h1>
+        <form>
+            <fieldset>
+                <legend><b>Dados Pessoais</b></legend>
+                <div>
+                    <label for="cpf">CPF:</label>
+                    <div>
+                        <input type="text" id="cpf" required="required" autofocus="autofocus">
+                    </div>
+                </div>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <div>
+                        <input type="text" id="nome" name="nome" required="required" maxlength="50">
+                    </div>
+                </div>
+                <div>
+                    <label for="data">Data de Nascimento:</label>
+                    <div>
+                        <input type="date" id="data" required="required">
+                    </div>
+                </div>
+                <div>
+                    <label for="sexo">Sexo:</label>
+                    <div>
+                        <fieldset>
+                            <legend>sexo:</legend>
+                            <input type="radio" id="masculino" name="sexo" value="masculino">Masculino<br>
+                            <input type="radio" id="feminino" name="sexo" value="feminino">Feminino<br>
+                        </fieldset>
+                    </div>
+                </div>
+                <div>
+                    <label for="tel">Telefone:</label>
+                    <div>
+                        <input type="text" id="telefone" name="telefone" required="required" maxlength="20">
+                    </div>
+
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <div>
+                        <input type="text" id="email" name="email" required="required">
+                    </div>
+
+                </div>
+                <div>
+                    <label for="foto">Foto:</label>
+                    <div>
+                        <input type="file" id="foto" id="foto" required="required">
+                    </div>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend><b>Endereço:</b></legend>
+                <div>
+                    <label for="logradouro">Logradouro:</label>
+                    <div>
+                        <input type="text" id="logradouro" name="logradouro" required="required">
+                    </div>
+                </div>
+                <div>
+                    <label for="numero">Número:</label>
+                    <div>
+                        <input type="number" id="numero" name="numero" required="required">
+                    </div>
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <div>
+                        <input type="text" id="bairro" name="bairro" required="required">
+                    </div>
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <div>
+                        <input type="text" id="cidade" name="cidade" required="required">
+                    </div>
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <div>
+                        <select name="estado" id="estado">
+                            <option value="SP">São Paulo</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="BA">Bahia</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="AL">Alagoas</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="cep">CEP:</label>
+                    <div>
+                        <input type="text" id="cep" name="cep" required="required">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><b>Pretensões</b></legend>
+                <div>
+                    <label for="cargo1">Cargo1:</label>
+
+                    <div>
+                        <select name="cargo1" id="cargo1">
+                            <option value="1">Administrador de Banco de Dados </option>
+                            <option value="2">Programador Júnior </option>
+                            <option value="3">Analista Senior</option>
+                            <option value="4">Gerente de Projetos</option>
+                            <option value="5">Analista de telemarketing</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="cargo2">Cargo2:</label>
+
+                    <div>
+                        <select name="cargo2" id="cargo2">
+                            <option value="1">Administrador de Banco de Dados </option>
+                            <option value="2">Programador Júnior </option>
+                            <option value="3">Analista Senior</option>
+                            <option value="4">Gerente de Projetos</option>
+                            <option value="5">Analista de telemarketing</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="cargo3">Cargo3:</label>
+
+                    <div>
+                        <select name="cargo3" id="cargo3">
+                            <option value="1">Administrador de Banco de Dados </option>
+                            <option value="2">Programador Júnior </option>
+                            <option value="3">Analista Senior</option>
+                            <option value="4">Gerente de Projetos</option>
+                            <option value="5">Analista de telemarketing</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="salario">Salário Pretendido:</label>
+                    <div>
+                        <input type="text" id="salario" name="salario" required="required">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <p><b>Experiência Profissional</b></p>
+                </legend>
+                <div>
+                    <label for="descricao">Descrição:</label>
+                    <div>
+                        <textarea name="descricao" id="descricao" cols="50" rows="10" required="required"></textarea>
+                    </div>
+
+                </div>
+            </fieldset>
+            <input type="button" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+</body>
+
+</html>

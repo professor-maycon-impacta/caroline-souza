@@ -1,0 +1,62 @@
+/* para o destaque do menu */
+
+.registro {
+    display: block;
+    position: absolute;
+    top: 400px;
+    right: 35px;
+    width: 160px;
+    height: 100px;
+    padding-top: 60px;
+    opacity: 0.8;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* Criação do círculo */
+    border-radius: 100%;
+    text-shadow: 0 1px 0 #000;
+    /* Efeitos de rotação do texto no círculo */
+    transform: rotate(6deg);
+    /* Efeitos de Gradiente */
+    background: -ms-linear-gradient(top, #a80000 0%, #740404 100%);
+    background: -webkit-linear-gradient(top, #a80000 0%, #740404 100%);
+    background: -moz-linear-gradient(top, #a80000 0%, #740404 100%);
+    background: linear-gradient(top, #a80000 0%, #740404 100%);
+    transition: transform 1s;
+}
+
+.registro:hover {
+    color: #fff;
+    /* Efeitos do Gradiente ao mover mouse */
+    background: linear-gradient(top, #bc0101 0%, #8c0909 100%);
+    transform: rotate(16deg) scale(1.1, 1.1);
+    transition: transform 1s;
+}
+
+.registro::before
+/* Criar a borda tracejada */
+
+{
+    display: block;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    height: 168px;
+    width: 168px;
+    content: "";
+    border: 3px dotted #740404;
+    /* Contas circulares do círculo */
+    border-radius: 100%;
+}
+
+.registro .free {
+    font-size: 80%;
+}
+
+@media screen and (max-width: 760px) {
+    .registro {
+        display: none;
+    }
+}

@@ -1,0 +1,3 @@
+ng new MinhaAppAngular
+ng serve -o
+
